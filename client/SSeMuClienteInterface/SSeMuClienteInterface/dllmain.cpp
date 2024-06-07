@@ -1,18 +1,10 @@
 #include "pch.h"
-#include <Windows.h>
-#include <string>
-#include <vector>
-#include <TlHelp32.h>
 #include "AccountInfo.h"
-#include <memory>
 #include "WindowRegister.h"
 #include "SocketClient.h"
 #include "Resource.h"
 #include "Protocol.h"
 #include "MainInfo.h"
-#include <fstream>
-#include <iostream>
-#include <ostream>
 
 #define TIMER_ID 1
 #define ACCOUNT_INFO_VALID (WM_APP + 0x01)
@@ -112,6 +104,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
             if (!accountInfo->IsSet()) {
                 GetAccountInfoFromWindowsTitle();
             }
+            mainInfo->Update();
+            std::wcout << *mainInfo << std::endl;
         }
         break;
     case ACCOUNT_INFO_VALID:

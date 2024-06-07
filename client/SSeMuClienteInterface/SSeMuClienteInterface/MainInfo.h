@@ -1,26 +1,32 @@
 #pragma once
-
-#include <windows.h>
+#include <Windows.h>
 #include <string>
-#include <ostream>
 
 class MainInfo {
 public:
     MainInfo();
+    void Update();
+    std::wstring GetAppName() const;
+    std::wstring GetAppVersion() const;
+    std::wstring GetInjectTime() const;
+    std::wstring GetParentProcessName() const;
+    DWORD GetParentProcessID() const;
+    std::wstring GetWindowTitle() const;
+    RECT GetWindowRectangle() const;
+    bool IsFullScreen() const;
+
     friend std::wostream& operator<<(std::wostream& os, const MainInfo& info);
 
 private:
-    void GetParentProcessInfo(HANDLE processHandle);
-    void CheckFullScreen();
+    void FetchParentProcessName();
+    void FetchWindowInfo();
 
     std::wstring appName_;
-    std::wstring appVersion_ = L"1.0.0";
+    std::wstring appVersion_;
     std::wstring injectTime_;
     std::wstring parentProcessName_;
-    DWORD parentProcessID_ = 0;
+    DWORD parentProcessID_;
     std::wstring windowTitle_;
     RECT windowRect_;
-    bool fullScreen_ = false;
-
-    HWND hwnd;
+    bool fullScreen_;
 };
