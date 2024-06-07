@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "CommandHandler.h"
+#include "SocketManager.h"
 #include "ServerDisplayer.h"
-#include "DataStructures.h"
 
 #define sServerDisplayer ServerDisplayer::GetInstance()
 

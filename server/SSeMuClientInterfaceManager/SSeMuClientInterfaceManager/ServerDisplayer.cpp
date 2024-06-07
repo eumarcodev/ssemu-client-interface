@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "ServerDisplayer.h"
+#include "LogDisplayInfo.h"
 #include "Log.h"
+
 
 std::mutex ServerDisplayer::m_mutex;
 ServerDisplayer::ServerDisplayer() : m_count(0)
