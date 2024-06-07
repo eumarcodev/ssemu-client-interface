@@ -14,4 +14,10 @@
 #include <iostream>
 #include <chrono>
 #include <thread>
-
+#include <TlHelp32.h>
+#include <psapi.h>
+#include <winternl.h>
+#include <string>
+#include <ctime>
+#include <sstream>
+#include <iomanip>

@@ -28,7 +28,7 @@
     <Filter Include="Source Files\Command">
       <UniqueIdentifier>{7cc0ea1d-dfe7-4f60-96b6-59bc9c516b02}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\AppInfo">
+    <Filter Include="Source Files\MainInfo">
       <UniqueIdentifier>{8e414efc-0060-4c0c-8a11-28c6eb747889}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -66,8 +66,8 @@
     <ClInclude Include="CommandHandler.h">
       <Filter>Source Files\Command</Filter>
     </ClInclude>
-    <ClInclude Include="AppInfo.h">
-      <Filter>Source Files\AppInfo</Filter>
+    <ClInclude Include="MainInfo.h">
+      <Filter>Source Files\MainInfo</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -89,8 +89,8 @@
     <ClCompile Include="CommandHandler.cpp">
       <Filter>Source Files\Command</Filter>
     </ClCompile>
-    <ClCompile Include="AppInfo.cpp">
-      <Filter>Source Files\AppInfo</Filter>
+    <ClCompile Include="MainInfo.cpp">
+      <Filter>Source Files\MainInfo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

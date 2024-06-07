@@ -149,7 +149,7 @@ xcopy "$(TargetDir)$(TargetName).dll" "D:\Utilitarios Mu\GetMainInfo" /Y</Comman
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AccountInfo.h" />
-    <ClInclude Include="AppInfo.h" />
+    <ClInclude Include="MainInfo.h" />
     <ClInclude Include="CommandHandler.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="ISocketClient.h" />
@@ -162,7 +162,7 @@ xcopy "$(TargetDir)$(TargetName).dll" "D:\Utilitarios Mu\GetMainInfo" /Y</Comman
     <ClInclude Include="WindowRegister.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AppInfo.cpp" />
+    <ClCompile Include="MainInfo.cpp" />
     <ClCompile Include="CommandHandler.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="JawelBank.cpp" />

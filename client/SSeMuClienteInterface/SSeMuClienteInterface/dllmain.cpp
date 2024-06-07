@@ -9,7 +9,7 @@
 #include "SocketClient.h"
 #include "Resource.h"
 #include "Protocol.h"
-#include "AppInfo.h"
+#include "MainInfo.h"
 #include <fstream>
 #include <iostream>
 #include <ostream>
@@ -32,7 +32,7 @@ std::wstring title = TEXT("");
 std::unique_ptr<AccountInfo> accountInfo;
 WindowRegister windowRegistrar;
 std::unique_ptr<SocketClient> socketClient;
-std::unique_ptr<AppInfo> appInfo;
+std::unique_ptr<MainInfo> mainInfo;
 
 void RedirectIOToConsole() {
     static std::wofstream fileStream("debug.log");
@@ -74,10 +74,10 @@ void GetAccountInfoFromWindowsTitle() {
 DWORD WINAPI EntryProcThread(LPVOID lpParam) {
     accountInfo = std::make_unique<AccountInfo>();
     socketClient = std::make_unique<SocketClient>();
-    appInfo = std::make_unique<AppInfo>();
+    mainInfo = std::make_unique<MainInfo>();
 
-    // Log the AppInfo
-    std::wcout << *appInfo << std::endl;
+    // Log the MainInfo
+    std::wcout << *mainInfo << std::endl;
 
     WNDCLASS wc = { 0 };
     wc.lpfnWndProc = WndProc;
