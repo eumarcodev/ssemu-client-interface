@@ -1,8 +1,6 @@
 #ifndef IWINDOW_H
 #define IWINDOW_H
 
-#include <Windows.h>
-#include <string>
 #include "SocketClient.h"
 
 class AccountInfo;

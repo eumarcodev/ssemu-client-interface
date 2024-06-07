@@ -2,9 +2,6 @@
 #define COMMANDHANDLER_H
 
 #include "Protocol.h"
-#include <unordered_map>
-#include <functional>
-#include <vector>
 
 class CommandHandler {
 public:

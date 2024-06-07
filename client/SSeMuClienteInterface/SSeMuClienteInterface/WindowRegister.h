@@ -1,8 +1,6 @@
 #ifndef WINDOWREGISTER_H
 #define WINDOWREGISTER_H
 
-#include <vector>
-#include <memory>
 #include "IWindow.h"
 #include "AccountInfo.h"
 

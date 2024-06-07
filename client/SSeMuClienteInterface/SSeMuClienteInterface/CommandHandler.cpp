@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "CommandHandler.h"
 #include "Protocol.h"
-#include <iostream>
 
 void CommandHandler::handleCommand(const std::vector<uint8_t>& data) {
     if (data.size() < sizeof(Command)) {
