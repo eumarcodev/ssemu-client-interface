@@ -1,12 +1,7 @@
 // ThreadPool.h
 #pragma once
 
-#include <functional>
-#include <queue>
-#include <vector>
-#include <thread>
-#include <mutex>
-#include <condition_variable>
+
 #include "DataStructures.h"
 
 class ThreadPool {

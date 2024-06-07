@@ -1,5 +1,5 @@
 #pragma once
-
+#include "pch.h"
 #include "CommandHandler.h"
 
 class HeartbeatHandler {
